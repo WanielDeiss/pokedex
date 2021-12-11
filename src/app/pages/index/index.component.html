@@ -1,5 +1,17 @@
-<h1>Pokemon</h1>
-
-<ol>
-    <li *ngFor="let pokemon of pokemons">{{pokemon.name}}</li>
-</ol>
+<div class="d-flex flex-wrap align-content-start justify-content-center">
+  <a
+    class="card m-3 p-2"
+    *ngFor="let pokemon of pokemons; index as i"
+    [routerLink]="'/pokemon/' + pokemon.name"
+  >
+    <img
+      class="img"
+      [src]="
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' +
+        (i + 1) +
+        '.png'
+      "
+      loading="lazy"
+    />
+  </a>
+</div>
