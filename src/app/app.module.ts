@@ -7,18 +7,26 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavbarComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    LoadingBarHttpClientModule,
+    LoadingBarRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
