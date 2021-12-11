@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { tap } from 'rxjs';
-import { Pokemon } from 'src/app/interfaces/pokemon';
-import { PokemonService } from 'src/app/services/pokemon.service';
+import { Pokemon } from '../../interfaces/pokemon';
+import { PokemonService } from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-details',
