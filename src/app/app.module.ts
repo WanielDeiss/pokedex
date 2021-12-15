@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 import { DetailsComponent } from './pages/details/details.component';
+import { GithubCornerComponent } from './components/github-corner/github-corner.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DetailsComponent } from './pages/details/details.component';
     IndexComponent,
     NotFoundComponent,
     NavbarComponent,
-    DetailsComponent
+    DetailsComponent,
+    GithubCornerComponent
   ],
   imports: [
     BrowserModule,
